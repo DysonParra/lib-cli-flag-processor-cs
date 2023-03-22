@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FlagProcessor} se encarga de realizar tareas específicas.
+ * @fileoverview    {FlagProcessor}
  *
  * @version         2.0
  *

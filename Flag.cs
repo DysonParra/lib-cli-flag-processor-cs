@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Flag} se encarga de realizar tareas específicas.
+ * @fileoverview    {Flag}
  *
  * @version         2.0
  *
