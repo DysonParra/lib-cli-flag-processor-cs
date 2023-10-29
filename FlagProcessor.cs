@@ -18,7 +18,7 @@ using System.Text.RegularExpressions;
 namespace Program {
 
     /**
-    * TODO: Definición de {@code FlagProcessor}.
+    * TODO: Description of {@code FlagProcessor}.
     *
     * @author Dyson Parra
     */

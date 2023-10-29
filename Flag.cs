@@ -17,7 +17,7 @@ using System;
 namespace Program {
 
     /**
-    * TODO: Definición de {@code Flag}.
+    * TODO: Description of {@code Flag}.
     *
     * @author Dyson Parra
     */
