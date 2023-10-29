@@ -21,7 +21,6 @@ namespace Program {
     * TODO: Definición de {@code FlagProcessor}.
     *
     * @author Dyson Parra
-    * @since 1.8
     */
     public class FlagProcessor {
 
