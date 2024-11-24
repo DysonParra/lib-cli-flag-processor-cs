@@ -31,11 +31,12 @@ namespace Program {
         * @param printNull indica si se van a imprimir las flags con valor de {@code null}
         */
         public static void PrintFlagsArray(Flag[] flags, Boolean printNull) {
-            Console.WriteLine("\nSTART Flags:");
-            foreach (Flag flag in flags)
-                if (printNull || flag != null)
-                    Console.WriteLine(flag);
-            Console.WriteLine("END Flags\n");
+            Console.WriteLine("\nFlags START");
+            if (flags != null)
+                foreach (Flag flag in flags)
+                    if (printNull || flag != null)
+                        Console.WriteLine(flag);
+            Console.WriteLine("Flags END\n");
         }
 
         /**
@@ -47,10 +48,10 @@ namespace Program {
         public static void PrintFlagsMatrix(String[][] flags, String message) {
             Console.WriteLine(message);
             String line;
-            foreach (String[] valueOr in flags) {
-                line = valueOr[0];
-                for (int i = 1; i < valueOr.Length; i++)
-                    line += " or " + valueOr[i];
+            foreach (String[] flag in flags) {
+                line = flag[0];
+                for (int i = 1; i < flag.Length; i++)
+                    line += " or " + flag[i];
                 Console.WriteLine(line);
             }
             if (flags.Length == 0)
@@ -405,17 +406,17 @@ namespace Program {
         *                          vacío.
         * @param requiredFlags     una matriz con las flags requeridas; en cada fila se indican las
         *                          flags y en cada columna indica cuales flags son excluyentes (si se
-        *                          incluye la valueOr de una columna no se pueden incluir las flags en
-        *                          las otras columnas de esa fila) al ser requeridas se debe incluir
-        *                          una y solo una valueOr de cada fila.
+        *                          incluye la flag de una columna no se pueden incluir las flags en las
+        *                          otras columnas de esa fila) al ser requeridas se debe incluir una y
+        *                          solo una flag de cada fila.
         * @param optionalFlags     una matriz con las flags opcionales; en cada fila se indican las
         *                          flags y en cada columna indica cuales flags son excluyentes (si se
-        *                          incluye la valueOr de una columna no se pueden incluir las flags en
-        *                          las otras columnas de esa fila) al ser opcionales se pueden o no
-        *                          incluir una y solo una valueOr de cada fila.
+        *                          incluye la flag de una columna no se pueden incluir las flags en las
+        *                          otras columnas de esa fila) al ser opcionales se pueden o no incluir
+        *                          una y solo una flag de cada fila.
         * @param allowUnknownFlags si {@code true} se aceptan flags que no estén en el array
         *                          {@code requiredFlags} ni en el array {@code optionalFlags}, caso
-        *                          contrario si se encuentra una valueOr que no esté en los arrays se
+        *                          contrario si se encuentra una flag que no esté en los arrays se
         *                          devuelve {@code null} y se mostrará mensaje de error.
         * @return array de {@code Flag} si se puede procesar {@code args} utilizando
         *         {@code requiredFlags} y {@code optionalFlags} sin ningún inconveniente, caso
@@ -442,7 +443,9 @@ namespace Program {
                 Console.WriteLine("");
                 PrintFlagsMatrix(requiredFlags, "Required flags:");
                 PrintFlagsMatrix(optionalFlags, "Optional flags:");
-            }
+                Console.WriteLine("Error in flags");
+            } else
+                PrintFlagsArray(flags, true);
 
             return flags;
         }
