@@ -17,10 +17,11 @@ using System;
 namespace Program {
 
     /**
-    * TODO: Description of {@code Flag}.
-    *
-    * @author Dyson Parra
-    */
+     * TODO: Description of {@code Flag}.
+     *
+     * @author Dyson Parra
+     * @since .NET 8 (LTS), C# 12
+     */
     public class Flag {
 
         /* Nombre de la flag */

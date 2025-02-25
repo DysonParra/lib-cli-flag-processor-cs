@@ -17,10 +17,11 @@ using System;
 namespace Program {
 
     /**
-    * TODO: Description of {@code Application}.
-    *
-    * @author Dyson Parra
-    */
+     * TODO: Description of {@code Program}.
+     *
+     * @author Dyson Parra
+     * @since .NET 8 (LTS), C# 12
+     */
     public class Program {
 
         /**

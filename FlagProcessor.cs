@@ -18,10 +18,11 @@ using System.Text.RegularExpressions;
 namespace Program {
 
     /**
-    * TODO: Description of {@code FlagProcessor}.
-    *
-    * @author Dyson Parra
-    */
+     * TODO: Description of {@code FlagProcessor}.
+     *
+     * @author Dyson Parra
+     * @since .NET 8 (LTS), C# 12
+     */
     public class FlagProcessor {
 
         /**
