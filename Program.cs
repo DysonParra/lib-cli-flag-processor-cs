@@ -25,10 +25,10 @@ namespace Program {
     public class Program {
 
         /**
-        * Entrada principal del sistema.
-        *
-        * @param args argumentos de la linea de comandos.
-        */
+         * Entrada principal del sistema.
+         *
+         * @param args argumentos de la linea de comandos.
+         */
         public static void Main(String[] args) {
             Console.WriteLine($"\nStart date: {DateTime.Now}\n");
             Console.WriteLine($"\nResult: " + AppTester.StartTesting(args));
