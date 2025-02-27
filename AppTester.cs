@@ -25,11 +25,11 @@ namespace Program {
     public class AppTester {
 
         /**
-        * Ejecuta las pruebas de la aplicación.
-        *
-        * @param args argumentos de la linea de comandos.
-        * @return {@code true} si se ejecutan las pruebas correctamente, {@code false} caso contrario.
-        */
+         * Ejecuta las pruebas de la aplicación.
+         *
+         * @param args argumentos de la linea de comandos.
+         * @return {@code true} si se ejecutan las pruebas correctamente, {@code false} caso contrario.
+         */
         public static Boolean StartTesting(String[] args) {
             String[][] requiredFlags = {
                 new String[] {"-use", "--notUse", "--find"},

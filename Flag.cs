@@ -32,10 +32,10 @@ namespace Program {
         public bool Required {get; set;}
 
         /**
-        * Obtiene el valor en {String} del objeto actual.
-        *
-        * @return un {String} con la representación del objeto.
-        */
+         * Obtiene el valor en {String} del objeto actual.
+         *
+         * @return un {String} con la representación del objeto.
+         */
         public override String ToString() {
             String result = "";
             if (Required)
